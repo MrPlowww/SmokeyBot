@@ -1,8 +1,8 @@
 # SmokeyBot
 This program gets status from the BBQ Guru API, formats it, writes it to an InfluxDB database (for external # visualization (e.g., Grafana) and data-logging purposes), and live-tweets BBQ session info.
 
-0.0) Prerequisites
-   0.1) Python Dependencies:
+# 0.0) Prerequisites
+#   0.1) Python Dependencies:
        0.1.a) Python package 'influxdb' shall be installed into the active Python environment (e.g., by running
                'pip install influxdb' in the environment's terminal window).
                 Tips: 'https://www.influxdata.com/blog/getting-started-python-influxdb/'
@@ -24,8 +24,8 @@ This program gets status from the BBQ Guru API, formats it, writes it to an Infl
               in a Common directory, since this module is used in other unrelated Projects).
        0.1.g) Python package 'untangle' shall be installed into the active Python environment (e.g., by running
               'pip install untangle' in the environment's terminal window).
-   0.2) Configuration Dependencies:
-       0.2.a) InfluxDB shall be installed; InfluxDB shall be running (e.g., by running this in a terminal window:
+#   0.2) Configuration Dependencies:
+      0.2.a) InfluxDB shall be installed; InfluxDB shall be running (e.g., by running this in a terminal window:
                'C:\Program Files\InfluxDB\influxd.exe" run reporting-disabled'.
                 For info on where InfluxDB writes data, see:
                 'https://stackoverflow.com/questions/43644051/influxdb-storage-folder-windows'.
@@ -44,12 +44,12 @@ This program gets status from the BBQ Guru API, formats it, writes it to an Infl
                (e.g., '../''twitter_credentials_G2Chubby.json'). See these websites for tips/reference:
                'http://stackabuse.com/accessing-the-twitter-api-with-python/',
                'http://nodotcom.org/python-twitter-tutorial.html'.
-1.0) Run-time notes:
-  1.1) Usage:
+# 1.0) Run-time notes:
+#  1.1) Usage:
       1.1.1) standalone?: Yes.
           >>> 'exec(open('smokey_bot.py').read())'
       1.1.2) call from another module?: No.
-2.0) Changelog:
+# 2.0) Changelog:
       Version 1.0: Original version.
       Version 1.1: Refactored InfluxDB writing so that there's flexibility for local or cloud instance usage.
       Version 2.0 - 2020-11-25: Refactored entire program to leverage individual functions.
