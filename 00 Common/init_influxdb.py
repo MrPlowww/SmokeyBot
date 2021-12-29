@@ -15,8 +15,7 @@
 # 1c. (DONE) installed new dependency "influxdb-client" dependency within Project SmokeyBot.
 #        0.1.c) Python package 'influxdb-client' shall be installed into the active Python environment.
 #    0.2) Configuration Dependency:
-#        0.2.a) InfluxDB shall be installed; InfluxDB shall be running (e.g., in a terminal window, execute:
-#                'C:\Users\User\Downloads\00 Brewing\influxdb-1.5.2-1\influxd.exe').
+#        0.2.a) InfluxDB shall be installed; InfluxDB shall be running
 #                 For info on where InfluxDB writes data, see:
 #                 'https://stackoverflow.com/questions/43644051/influxdb-storage-folder-windows'.
 #        0.2.b) If a target InfluxDB schema does not already exist, then the optional 'reset_database' function must
